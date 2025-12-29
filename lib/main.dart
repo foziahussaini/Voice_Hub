@@ -18,7 +18,6 @@ class _VoiceHubAppState extends State<VoiceHubApp> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: Center(
-
         ),
       ),
     );
