@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main(){
   runApp(const VoiceHubApp());
@@ -16,10 +17,28 @@ class _VoiceHubAppState extends State<VoiceHubApp> {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        body: Center(
+      home: Scaffold( extendBodyBehindAppBar: true,
+        appBar: AppBar(
+          backgroundColor: Colors.pinkAccent.shade100,
+          toolbarHeight: 100,
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.only(bottomRight: Radius.circular(36),
+              bottomLeft: Radius.circular(36),),),
+          title: Text("Choose any Title", style: GoogleFonts.alkalami(fontSize: 28, color: Colors.purple.shade900),),),
+        body: SafeArea(child: Center(
+          child: Container(
+            margin: EdgeInsets.zero,
+            width: 400,
+            decoration: BoxDecoration(
+              image: DecorationImage(image: AssetImage("assets/images/bg3.jpg")),
+            ),
+            child: Column(
+
+            ),
+          ),
         ),
       ),
+      )
     );
   }
 }
