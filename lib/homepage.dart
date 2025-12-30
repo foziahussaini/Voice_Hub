@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
             width: 400,
             height: 800,
             decoration: BoxDecoration(
-              gradient: LinearGradient(colors: [Colors.deepOrange[300]!,
+              gradient: LinearGradient(colors: [Colors.red[300]!,
                 Colors.deepOrange.shade200, Colors.white],
               begin: Alignment.topCenter,
               end: Alignment.bottomCenter),

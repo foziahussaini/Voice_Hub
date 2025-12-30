@@ -20,6 +20,13 @@ class _VoiceHubAppState extends State<VoiceHubApp> {
   late var title2 = titles[1];
   late var title3 = titles[2];
   // var episode= false;
+
+  // void displayTitles(){
+  //   setState(() {
+  //     displayTitles = titles[Random().nextInt(titles.length)];
+  //   });
+  // }
+
   // void onIconTap(String titles){
   //     if(episode = titles[0] as bool){
   //       setState(() {
